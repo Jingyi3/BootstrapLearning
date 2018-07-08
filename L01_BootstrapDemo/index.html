@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--响应式布局，通过meta标签来设置
+        自适应，宽度 是当前物理设备的宽度，缩放是不缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            padding-top: 50px;
+        }
+
+        .starter {
+            /*上下40px 左右15px*/
+            padding: 40px 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--作为导航的存在-->
+<!--样式-default 位置-顶部-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!--导航上加一个logo-->
+        <div class="container">
+            <!--这个div来承载当前navbar的头部分-->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Project Name</a>
+            </div>
+
+            <!--指定有几行 有多少内容-->
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+
+                    <!--默认是选中的状态-->
+                    <li class="active">
+                        <!--加上a标签 代表他是可以选中的-->
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="starter">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">welcome</p>
+    </div>
+
+</div>
+</body>
+</html>
