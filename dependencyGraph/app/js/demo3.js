@@ -50,3 +50,14 @@ render(d3.select("svg g"), g);
 var xCenterOffset = (svg.attr("width") - g.graph().width) / 2;
 svgGroup.attr("transform", "translate(" + xCenterOffset + ", 20)");
 svg.attr("height", g.graph().height + 40);
+
+$(document).ready(function () {
+    $(".svg-second").hide();
+
+    $(".btn-show-and-hide").click(function () {
+        $(".svg-first").hide();
+        $(".svg-second").show();
+
+    })
+    
+})

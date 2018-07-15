@@ -6,45 +6,59 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Features</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
 </nav>
-<br><br>
-
+<!--<nav class="navbar navbar-default" role="navigation">-->
+    <!--<div class="collapse navebar-collapse">-->
+        <!--<ul class="nav navbar-nav" id="mytab1">-->
+            <!--<li class="active"><a href="#">hello</a> </li>-->
+            <!--<li ><a href="#">hello</a> </li>-->
+            <!--<li ><a href="#">hello</a> </li>-->
+            <!--<li ><a href="#">hello</a> </li>-->
+            <!--<li ><a href="#">hello</a> </li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</nav>-->
 <div class="container">
+    <ul id="mytab" class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="">home</a> </li>
+        <li role="presentation"><a href="">hello</a> </li>
+        <li role="presentation" class="dropdown"><a href="" class="dropdown" data-toggle="dropdown">world
+        <span class="caret"></span>
+        </a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello1</a> </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello2</a> </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello3</a> </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello4</a> </li>
+
+            </ul>
+
+        </li>
+    </ul>
+
+
+    <br>
     <!-- Standard button -->
     <button type="button" class="btn btn-default">（默认样式）Default</button>
 
@@ -55,7 +69,17 @@
     <button type="button" class="btn btn-success">（成功）Success</button>
 
 </div>
+
+
 <script src="jquery-3.3.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
+
+<script>
+    $("#mytab a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+
+    });
+</script>
 </body>
 </html>

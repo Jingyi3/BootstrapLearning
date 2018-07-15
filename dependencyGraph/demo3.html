@@ -4,22 +4,56 @@
     <meta charset="UTF-8">
     <title>demo3</title>
 
-    <link rel="stylesheet" href="app/css/demo.css">
-    <link rel="stylesheet" href="app/css/demo3.css"/>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
     <script src="lib/js/dagre-d3.min.js"></script>
+    <link rel="stylesheet" href="app/css/demo.css">
+    <link rel="stylesheet" href="app/css/demo3.css"/>
+    <link rel="stylesheet" href="app/css/demo4.css"/>
 </head>
 <body>
 
-<h1>Dagre D3 Demo: Sentence Tokenization</h1>
 
-<svg id="svg-canvas" width=960 height=600></svg>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="mytab">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <h1>Dagre D3 Demo: Sentence Tokenization</h1>
+    <button type="button" class="btn btn-primary btn-show-and-hide">Primary</button>
+
+</div>
+<br>
+<svg id="svg-canvas" class="svg-first"width=960 height=600></svg>
+<svg id="svg-canvas2" class="svg-second"width=960 height=600></svg>
 
 <section>
     <p>An example of visualizing the tokenization of a sentence. This example shows
         how CSS classes can be applied to a rendered graph.
 </section>
 
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script src="app/js/demo3.js"></script>
+<script src="app/js/demo4.js"></script>
+
 </body>
 </html>
