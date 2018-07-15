@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 
+    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>-->
 </head>
 <body>
 <!--
@@ -31,87 +32,141 @@
 
 -->
 
-<form class="form-horizontal" role="form">
-    <fieldset>
-    <div class="form-group">
-        <label class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
+<!--<form role="form">-->
+    <!--<fieldset>-->
+    <!--<div class="form-group">-->
+        <!--<label class="col-sm-2 control-label">Email</label>-->
+        <!--<div class="col-sm-10">-->
 
-            <input type="email" class="form-control" placeholder="Email">
-        </div>
+            <!--<input type="email" class="form-control" placeholder="Email">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+
+        <!--<label class="col-sm-2 control-label">Password</label>-->
+        <!--<div class="col-sm-10">-->
+            <!--<input type="password" class="form-control" placeholder="Password">-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="form-group">-->
+        <!--<div class="col-sm-offset-2 col-sm-10">-->
+            <!--<div class="checkbox">-->
+                <!--<label>-->
+                    <!--<input type="checkbox">记住密码-->
+                <!--</label>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="form-group">-->
+        <!--<div class="col-sm-offset-2 col-sm-10">-->
+            <!--<button type="submit" class="btn btn-default">登录</button>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--</fieldset>-->
+<!--</form>-->
+
+
+<!--<form role="form">-->
+    <!--<input type="text" class="form-control">-->
+    <!--<textarea class="form-control" rows="5">hello</textarea>-->
+    <!--<div class="checkbox">-->
+        <!--<label>-->
+            <!--<input type="checkbox" value="">-->
+            <!--苹果-->
+        <!--</label>-->
+    <!--</div>-->
+    <!--<div class="checkbox">-->
+        <!--<label>-->
+            <!--<input type="checkbox" value="">-->
+            <!--香蕉-->
+        <!--</label>-->
+    <!--</div>-->
+
+    <!--<div class="radio">-->
+        <!--<label>-->
+            <!--<input name="optionsRadios"  type="radio" checked>-->
+            <!--男-->
+        <!--</label>-->
+    <!--</div>-->
+    <!--<div class="radio">-->
+        <!--<label>-->
+            <!--<input name="optionsRadios" type="radio">-->
+            <!--女-->
+        <!--</label>-->
+    <!--</div>-->
+
+    <!--<select multiple class="form-control">-->
+        <!--<option>1</option>-->
+        <!--<option>2</option>-->
+        <!--<option>3</option>-->
+        <!--<option>4</option>-->
+    <!--</select>-->
+
+
+
+<!--&lt;!&ndash;静态蚊子块&ndash;&gt;-->
+    <!--<p class="form-control-static">请按照我的格式输入：hello@163.com</p>-->
+<!--&lt;!&ndash;焦点状态&ndash;&gt;-->
+
+    <!--<input class="form-control" type="text" placeholder="hello" disabled>-->
+    <!--<input class="form-control" type="text" readonly>-->
+
+
+    <!--<div class="form-group has-warning has-feedback">-->
+        <!--<label>用户名</label>-->
+        <!--<input class="form-control" type="text">-->
+        <!--<span class="glyphicon glyphicon-ok form-control-feedback"></span>-->
+    <!--</div>-->
+    <!--<div class="form-group has-success">-->
+        <!--<label>用户名</label>-->
+        <!--<input class="form-control" type="text">-->
+    <!--</div>-->
+    <!--<div class="form-group has-error">-->
+        <!--<label>用户名</label>-->
+        <!--<input class="form-control" type="text">-->
+        <!--<span class="help-block"></span>-->
+    <!--</div>-->
+
+<!--</form>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
-    <div class="form-group">
-
-        <label class="col-sm-2 control-label">Password</label>
-        <div class="col-sm-10">
-            <input type="password" class="form-control" placeholder="Password">
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox">记住密码
-                </label>
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">登录</button>
-        </div>
-    </div>
-    </fieldset>
-</form>
-
-
-<form role="form">
-    <input type="text" class="form-control">
-    <textarea class="form-control" rows="5">hello</textarea>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            苹果
-        </label>
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
-            香蕉
-        </label>
-    </div>
-
-    <div class="radio">
-        <label>
-            <input name="optionsRadios"  type="radio" checked>
-            男
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input name="optionsRadios" type="radio">
-            女
-        </label>
-    </div>
-
-    <select multiple class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select>
-
-
-
-<!--静态蚊子块-->
-    <p class="form-control-static">请按照我的格式输入：hello@163.com</p>
-<!--焦点状态-->
-
-    <input class="form-control" type="text" placeholder="hello" disabled>
-    <input class="form-control" type="text" readonly>
-
-</form>
+</nav>
+<script src="jquery-3.3.1.js"></script>
+<script src="bootstrap.min.js"></script>
 </body>
 </html>
